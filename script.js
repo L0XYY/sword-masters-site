@@ -1,4 +1,4 @@
-const ADMIN_CODE = "swordmastersdevs";
+const ADMIN_CODE = "L1verp00lred1!";
 
 const defaultCountdown = {
   title: "Sword Masters Launch",
