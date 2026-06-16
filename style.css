@@ -1,0 +1,9 @@
+body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif}
+nav{display:flex;justify-content:space-between;padding:20px;background:#111}
+a{color:#fff;text-decoration:none;margin-left:15px}
+header{text-align:center;padding:120px 20px}
+h1{font-size:72px}
+.btn{display:inline-block;background:#fff;color:#000;padding:12px 20px;border-radius:8px}
+section{padding:60px 20px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:#111;padding:20px;border:1px solid #333;border-radius:10px}
