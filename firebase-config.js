@@ -1,11 +1,10 @@
-// Paste your Firebase web app config here.
-// Firebase Console → Project settings → Your apps → Web app → SDK setup and configuration → Config
 export const firebaseConfig = {
-  apiKey: "PASTE_API_KEY_HERE",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://PASTE_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.appspot.com",
-  messagingSenderId: "PASTE_SENDER_ID",
-  appId: "PASTE_APP_ID"
+  apiKey: "AIzaSyCSxWw322m9b-DTVqrkNhgmtNBcyBJCSAw",
+  authDomain: "ccu-c1c53.firebaseapp.com",
+  databaseURL: "https://ccu-c1c53-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "ccu-c1c53",
+  storageBucket: "ccu-c1c53.firebasestorage.app",
+  messagingSenderId: "713571512443",
+  appId: "1:713571512443:web:3d4e1db9a40d66aa3bb2de",
+  measurementId: "G-0Y4RXED4HW"
 };
