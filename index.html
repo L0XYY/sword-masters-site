@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sword Masters</title>
+  <meta name="description" content="Sword Masters is a Roblox sword fighting game. Train, unlock swords, battle, redeem codes, and become a master." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true">
+    <span class="sparkle s1">✦</span>
+    <span class="sparkle s2">✦</span>
+    <span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✦</span>
+    <span class="sparkle s5">✦</span>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="server-icon.png" alt="Sword Masters logo">
+      <span>Sword Masters</span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#countdown">Launch</a>
+      <a href="#updates">Updates</a>
+      <a href="#codes">Codes</a>
+      <a href="#faq">FAQ</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="hero-copy">
+        <p class="pill">⭐ Roblox Experience</p>
+        <h1>Sword Masters</h1>
+        <p class="hero-text" id="homeDescription">
+          Train your power, unlock rare swords, battle in arenas, collect rewards,
+          and become the strongest blade master.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary play-link" href="https://www.roblox.com" target="_blank" rel="noopener">Play Soon</a>
+          <a class="button secondary" href="#features">See Features</a>
+        </div>
+      </div>
+
+      <div class="logo-stage">
+        <div class="blob blob-blue"></div>
+        <div class="blob blob-orange"></div>
+        <img src="server-icon.png" alt="Sword Masters logo" class="main-logo">
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-title">
+        <p class="pill">⚔ About The Game</p>
+        <h2>Train. Fight. Collect.</h2>
+        <p>
+          Sword Masters is a bright, fast Roblox sword game built around progression,
+          fun upgrades, and clean simulator-style gameplay.
+        </p>
+      </div>
+
+      <div class="big-panel">
+        <div>
+          <h3>Simple to start</h3>
+          <p>Jump in, train up, earn rewards, and start unlocking better gear.</p>
+        </div>
+        <div>
+          <h3>Made for progress</h3>
+          <p>Every session helps you get stronger and closer to becoming a master.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section reveal">
+      <div class="section-title">
+        <p class="pill">🏆 Features</p>
+        <h2>Game Systems</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="emoji">💪</span>
+          <h3>Train Power</h3>
+          <p>Build strength and get ready for harder battles.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">⚔️</span>
+          <h3>Sword Combat</h3>
+          <p>Fight using swords and improve through progression.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">🌟</span>
+          <h3>Rare Swords</h3>
+          <p>Unlock stronger, cooler, and rarer blades.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">🎁</span>
+          <h3>Rewards</h3>
+          <p>Codes and rewards will be posted after launch.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="countdown" class="section reveal">
+      <div class="section-title">
+        <p class="pill">⏰ Launch Timer</p>
+        <h2 id="countdownHeading">Coming Soon</h2>
+        <p id="countdownDateText">Target launch: December 31, 2026</p>
+      </div>
+
+      <div class="countdown">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section id="updates" class="section reveal">
+      <div class="section-title">
+        <p class="pill">📢 Updates</p>
+        <h2>Latest News</h2>
+        <p id="updateMessage">No updates posted yet.</p>
+      </div>
+    </section>
+
+    <section id="codes" class="section reveal">
+      <div class="section-title">
+        <p class="pill">🎁 Codes</p>
+        <h2>Active Codes</h2>
+        <p id="codesIntro">No public codes yet. Check back after launch.</p>
+      </div>
+
+      <div class="code-list" id="codeList">
+        <div class="code-box">
+          <span>COMING SOON</span>
+          <p>Rewards will appear here when codes are released.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq reveal">
+      <div class="section-title">
+        <p class="pill">❔ FAQ</p>
+        <h2>Questions</h2>
+      </div>
+
+      <details>
+        <summary>Is Sword Masters released?</summary>
+        <p>Not yet. The game is currently coming soon.</p>
+      </details>
+
+      <details>
+        <summary>Where can I play?</summary>
+        <p>The official Roblox game link can be added to the Play Soon button when ready.</p>
+      </details>
+
+      <details>
+        <summary>Are there codes?</summary>
+        <p>Codes are coming soon and will be posted on this page.</p>
+      </details>
+    </section>
+
+    <section class="cta reveal">
+      <p class="pill">🔥 Ready?</p>
+      <h2>Become a Sword Master</h2>
+      <p>Follow the launch page for updates, codes, and release information.</p>
+      <a class="button primary play-link" href="https://www.roblox.com" target="_blank" rel="noopener">Play on Roblox</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sword Masters.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
