@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sword Masters Admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-nav">
+    <a class="brand" href="index.html">
+      <img src="server-icon.png" alt="Sword Masters logo">
+      <span>Admin</span>
+    </a>
+
+    <nav class="nav-links always-open">
+      <a href="index.html">View Site</a>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <section class="admin-hero">
+      <p class="pill">⭐ Sword Masters</p>
+      <h1>Admin Panel</h1>
+      <p class="hero-text">
+        Edit the countdown, play link, latest update, homepage text, and codes.
+      </p>
+    </section>
+
+    <section class="admin-layout">
+      <form class="admin-card" id="adminForm">
+        <h2>Site Settings</h2>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="playLink">Roblox Play Link</label>
+            <input id="playLink" type="url" placeholder="https://www.roblox.com/games/..." />
+          </div>
+
+          <div class="field">
+            <label for="countdownDate">Countdown Date</label>
+            <input id="countdownDate" type="datetime-local" />
+          </div>
+
+          <div class="field">
+            <label for="homeDescription">Homepage Text</label>
+            <textarea id="homeDescription" placeholder="Main homepage text"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="updateMessage">Latest Update</label>
+            <textarea id="updateMessage" placeholder="Example: New sword sneak peek coming soon!"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="codes">Active Codes</label>
+            <textarea id="codes" placeholder="One code per line, example:
+RELEASE
+SWORD100
+THANKYOU"></textarea>
+          </div>
+        </div>
+
+        <p class="admin-note">
+          Save changes to preview them in this browser. To make changes show for everyone on GitHub Pages,
+          click Export Config and replace the contents of <strong>config.js</strong>.
+        </p>
+
+        <div class="admin-actions">
+          <button class="button primary" type="submit">Save Preview</button>
+          <button class="button secondary" type="button" id="exportButton">Export Config</button>
+          <button class="button secondary" type="button" id="resetButton">Reset</button>
+        </div>
+
+        <div class="notice" id="notice">Saved.</div>
+      </form>
+
+      <aside>
+        <div class="admin-card">
+          <h2>Preview</h2>
+          <div class="preview-list">
+            <div class="preview-item">
+              <small>Play Link</small>
+              <p id="previewPlayLink">—</p>
+            </div>
+            <div class="preview-item">
+              <small>Countdown</small>
+              <p id="previewCountdown">—</p>
+            </div>
+            <div class="preview-item">
+              <small>Codes</small>
+              <p id="previewCodes">—</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Export</h2>
+          <p class="admin-note">Copy this into <strong>config.js</strong>.</p>
+          <div class="field">
+            <textarea id="exportOutput" readonly></textarea>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
